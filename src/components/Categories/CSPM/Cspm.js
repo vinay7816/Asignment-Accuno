@@ -80,11 +80,14 @@ const DoughChartComponent = ({ widgets, addwidget }) => {
           onClick={addwidget}
         >
           <div className='card-body d-flex justify-content-center align-items-center'>
-       
+            <div className='chart-container'>
+              
        <button className="add-widget-button" >
    <span className="icon">+</span>
    <span>Add Widget</span>
  </button>
+            </div>
+       
      </div>
         </div>
       </div>

@@ -17,14 +17,14 @@ const Navbar = ({ onSearch }) => {
         height: "50px", 
         backgroundColor: "white", 
         boxShadow: "0px 4px 2px rgba(0, 0, 0, 0.1)", 
-        padding: "0 20px", 
+       
         boxSizing: "border-box" 
       }}
     >
       <div className="d-flex align-items-center">
-        <span style={{ color: "#6c757d" }}>Home</span>
+        <span className='dash-heading' style={{ color: "#6c757d",paddingLeft:"20px" }}>Home</span>
         <ChevronRightIcon style={{ margin: "0 5px", color: "#6c757d", fontSize: "7px" }} />
-        <span style={{ fontWeight: "bold" }}>Dashboard V2</span>
+        <span className='dash-heading' style={{ fontWeight: "bold" }}>Dashboard V2</span>
       </div>
       <div className='d-flex align-items-center'>
         <input 

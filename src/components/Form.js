@@ -110,7 +110,7 @@ const Form = ({ selectedChartType, onAddWidget, handleWidget }) => {
         <div className="d-flex justify-content-between align-items-center">
           <button
             type="button"
-            className="add-more-btn"
+            className="add-more-btn2"
             onClick={handleAddMore}
           >
             + Add More Data

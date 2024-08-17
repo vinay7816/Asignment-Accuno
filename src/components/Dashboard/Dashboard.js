@@ -5,12 +5,15 @@ import LoopIcon from '@mui/icons-material/Loop';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import AccessTimeFilledIcon from '@mui/icons-material/AccessTimeFilled';
 import { useSelector } from 'react-redux';
+import Sidebar from "../Sidebar/Sidebar"
 import './Dashboard.css'; 
 
 const Dashboard = () => {
   const [selectedOption, setSelectedOption] = useState('Last 2 days');
   const [searchQuery, setSearchQuery] = useState('');
   const categories = useSelector((state) => state.categories);
+  const [openSidebar, setOpenSidebar] = useState(false);
+  const [selectedCategory, setSelectedCategory] = useState(null);
 
   const handleSelect = (option) => {
     setSelectedOption(option);
@@ -20,7 +23,11 @@ const Dashboard = () => {
     setSearchQuery(query);
   };
 
-  // Filter categories based on the search query
+  const addWidget = (category) => {
+    setSelectedCategory(category);
+    setOpenSidebar(true);
+  };
+
   const filteredCategories = categories.map((category) => ({
     ...category,
     widgets: category.widgets.filter(widget =>
@@ -41,7 +48,7 @@ const Dashboard = () => {
             <div className="icon-container">
               <MoreVertIcon />
             </div>
-            <button className="btn add-widget-button mx-2">
+            <button className="btn add-widget-button mx-2" onClick={() => addWidget(null)}>
               <span className="icon">+</span>
               <span>Add Widget</span>
             </button>
@@ -90,10 +97,17 @@ const Dashboard = () => {
         </div>
         <div>
           {filteredCategories.map((category) => (
-            <CategoryComponent key={category.chartType} category={category} />
+            <CategoryComponent key={category.chartType} category={category} addWidget={addWidget} />
           ))}
         </div>
       </div>
+      {openSidebar && (
+        <Sidebar
+          open={openSidebar}
+          onClose={() => setOpenSidebar(false)}
+          category={selectedCategory}
+        />
+      )}
     </div>
   );
 };

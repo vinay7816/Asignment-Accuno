@@ -43,6 +43,18 @@
   align-self: flex-start;
   background-color: #007bff;
   color: #fff;
+  padding: 5px 15px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.add-more-btn2 {
+  align-self: flex-start;
+  background-color: #007bff;
+  color: #fff;
   padding: 10px 15px;
   font-size: 1rem;
   font-weight: 600;
@@ -51,11 +63,30 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+.save-btn{
+  
+    align-self: flex-start;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+}
 
 .add-more-btn:hover {
   background-color: #0056b3;
 }
-
+.add-more-btn2:hover {
+  background-color: #0056b3;
+}
+.save-btn:hover {
+  background-color: #0056b3;
+}
 .close-button {
   position: absolute;
   top: 10px;
@@ -84,5 +115,31 @@
   .add-more-btn {
       padding: 8px 12px;
       font-size: 0.9rem;
+  }
+  .add-more-btn2 {
+    align-self: flex-start;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 10px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .save-btn{
+    
+      align-self: flex-start;
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 10px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    
   }
 }

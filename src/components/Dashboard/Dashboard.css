@@ -57,7 +57,11 @@
 }
 
 .add-widget-button:hover {
-  background-color: #151c61;
+  background-color: white;
+  color: black;
+}
+.dash-heading{
+  font-size: 15px;
 }
 
 .dropdown-toggle {
@@ -134,6 +138,9 @@
 @media (max-width: 576px) {
   .dashboard-content {
     padding: 10px;
+  }
+  .dash-heading{
+    font-size: 12px;
   }
 
   .dashboard-title {

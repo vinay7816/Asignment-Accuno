@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 
 
-```markdown
+
 ## Installation
 
 To install the necessary libraries, run the following commands:

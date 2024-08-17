@@ -2,7 +2,12 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### Install the following libraries
+
+
+```markdown
+## Installation
+
+To install the necessary libraries, run the following commands:
 
 ```bash
 npm install chart.js@latest
@@ -11,6 +16,8 @@ npm install @mui/material @emotion/react @emotion/styled
 npm install @mui/material @mui/styled-engine-sc styled-components
 npm install @mui/icons-material
 npm install @reduxjs/toolkit
+npm install react-redux
+
 npm install react-redux
 
 ## Available Scripts

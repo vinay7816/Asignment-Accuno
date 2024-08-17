@@ -2,14 +2,16 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# install the following libraries 
-npm install chart.js@latest\
-npm i react-chartjs-2\
-npm install @mui/material @emotion/react @emotion/styled\
-npm install @mui/material @mui/styled-engine-sc styled-components\
-npm install @mui/icons-material\
-npm install @reduxjs/toolkit\
-npm install react-redux\
+### Install the following libraries
+
+```bash
+npm install chart.js@latest
+npm i react-chartjs-2
+npm install @mui/material @emotion/react @emotion/styled
+npm install @mui/material @mui/styled-engine-sc styled-components
+npm install @mui/icons-material
+npm install @reduxjs/toolkit
+npm install react-redux
 
 ## Available Scripts
 

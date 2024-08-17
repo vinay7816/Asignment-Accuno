@@ -1,0 +1,49 @@
+.cspm-main {
+  height: 220px;
+  width: 450px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.cspm-main.card {
+  margin-bottom: 20px;
+ 
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.chart-container {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+}
+
+.chart-legend {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.legend-color {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 8px;
+  border-radius: 2px;
+}
